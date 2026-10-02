@@ -23,7 +23,9 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - run: npm ci
+      # The lockfile is generated on Windows and lacks Linux native bindings (npm bug #4828),
+      # so resolve fresh on the Linux runner.
+      - run: rm -f package-lock.json && npm install
       - run: npm run build
       # SPA fallback: GitHub Pages serves 404.html for unknown paths like /about
       - run: cp dist/index.html dist/404.html
