@@ -1,0 +1,106 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-display: "Big Shoulders Display", "Arial Narrow", sans-serif;
+  --font-serif: "Newsreader", Georgia, serif;
+  --font-sans: "Manrope", system-ui, sans-serif;
+  --radius-sm: calc(var(--radius) - 1px);
+  --radius-md: var(--radius);
+  --radius-lg: var(--radius);
+  --radius-xl: var(--radius);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-graphite: var(--graphite);
+  --color-ivory: var(--ivory);
+  --color-metal: var(--metal);
+}
+
+:root {
+  --radius: 2px;
+  --ivory: oklch(0.975 0.014 85);
+  --background: oklch(0.955 0.02 85);
+  --foreground: oklch(0.26 0.012 90);
+  --card: oklch(0.93 0.025 85);
+  --card-foreground: oklch(0.26 0.012 90);
+  --popover: oklch(0.975 0.014 85);
+  --popover-foreground: oklch(0.26 0.012 90);
+  --primary: oklch(0.38 0.055 125); /* deep olive */
+  --primary-foreground: oklch(0.975 0.014 85);
+  --secondary: oklch(0.9 0.02 85);
+  --secondary-foreground: oklch(0.26 0.012 90);
+  --muted: oklch(0.9 0.018 85);
+  --muted-foreground: oklch(0.47 0.015 85);
+  --accent: oklch(0.74 0.13 75); /* amber */
+  --accent-foreground: oklch(0.22 0.02 80);
+  --destructive: oklch(0.55 0.18 30);
+  --destructive-foreground: oklch(0.975 0.014 85);
+  --border: oklch(0.8 0.02 85);
+  --input: oklch(0.78 0.02 85);
+  --ring: oklch(0.38 0.055 125);
+  --graphite: oklch(0.27 0.01 90);
+  --metal: oklch(0.72 0.012 85);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { font-family: var(--font-display); text-transform: uppercase; letter-spacing: -0.01em; line-height: 0.88; font-weight: 800; overflow-wrap: anywhere; }
+  html, body { overflow-x: clip; }
+}
+
+@utility eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+@utility vertical-label {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+@keyframes reveal-up { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: none; } }
+@keyframes curtain { from { clip-path: inset(0 0 100% 0); } to { clip-path: inset(0 0 0 0); } }
+@keyframes slow-pan { from { transform: scale(1.08) translateX(0); } to { transform: scale(1.08) translateX(-2.5%); } }
+
+.anim-up { animation: reveal-up 0.9s cubic-bezier(.2,.7,.2,1) both; }
+.anim-curtain { animation: curtain 1.3s cubic-bezier(.7,0,.2,1) both; }
+.slow-pan { animation: slow-pan 18s ease-in-out infinite alternate; }
+
+.reveal { opacity: 0; transform: translateY(32px); transition: opacity .9s ease, transform .9s cubic-bezier(.2,.7,.2,1); }
+.reveal.is-visible { opacity: 1; transform: none; }
+.reveal-img { clip-path: inset(12% 0 12% 0); transition: clip-path 1.2s cubic-bezier(.7,0,.2,1); }
+.reveal-img.is-visible { clip-path: inset(0 0 0 0); }
+
+@media (prefers-reduced-motion: reduce) {
+  .anim-up, .anim-curtain, .slow-pan { animation: none; }
+  .reveal, .reveal-img { opacity: 1; transform: none; clip-path: none; transition: none; }
+}
