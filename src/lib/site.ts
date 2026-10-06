@@ -19,8 +19,8 @@ export const services = [
     w: 1200,
     h: 1504,
     alt: "Driver on a sunny hill road seen from the back seat of a cream leather interior with the centre screen playing music",
-    body: "We help you get satellite radio set up and running in your vehicle. That can mean walking through activation steps, checking whether your existing radio supports it, sorting out reception or antenna concerns, organising favourite channels, and explaining the controls so listening becomes second nature.",
-    points: ["Compatibility questions", "Setup and activation guidance", "Reception and signal concerns", "Channel and preset organisation"],
+    body: "We help you get satellite radio set up and running in your vehicle. That can mean walking through activation steps, checking whether your existing radio supports it, sorting out reception or antenna concerns, organising favourite channels, and explaining the controls so listening becomes second nature. If a subscription term, plan option or unexpected charge has you puzzled, we can help you make sense of the wording and know what to ask your provider.",
+    points: ["Compatibility questions", "Setup and activation guidance", "Reception and signal concerns", "Channel and preset organisation", "Receivers, antennas and accessories", "Plan options and billing questions"],
   },
   {
     slug: "audio-upgrades",
@@ -68,7 +68,7 @@ export const services = [
     h: 1008,
     alt: "Hands testing wiring behind a removed car stereo with a multimeter under a work lamp",
     body: "When something stops working, we help narrow down the cause. Whether it's a radio that won't turn on, sound cutting in and out, one speaker gone quiet or static that won't clear, we work through the likely issues with you and point you toward the right fix.",
-    points: ["No power or no sound", "Crackling and intermittent audio", "Single speaker failures", "Static and interference"],
+    points: ["No power or no sound", "Crackling and intermittent audio", "Single speaker failures", "Static and interference", "Satellite signal dropouts"],
   },
   {
     slug: "personalized",

@@ -305,7 +305,7 @@ function BuiltAroundVehicle() {
 
 const steps = [
   ["Tell us about your vehicle", "Make, model, year and what's currently installed."],
-  ["Understand your audio needs", "How you listen, what bothers you, what you'd love."],
+  ["Understand your audio needs", "How you listen, what bothers you, what you'd love — including any satellite radio questions."],
   ["Find the right solution", "Clear options that suit your car and priorities."],
   ["Get back to enjoying the drive", "Turn the key, press play, and go."],
 ];
@@ -351,6 +351,9 @@ function FinalCta() {
           <h2 id="cta-title" className="mt-4 text-6xl sm:text-7xl md:text-6xl lg:text-7xl xl:text-8xl">
             Your drive.<br /><span className="text-accent">Your sound.</span>
           </h2>
+          <p className="mt-6 max-w-sm text-sm leading-relaxed text-primary-foreground/80">
+            Questions about satellite radio, your setup or a confusing bill? Call for an independent consultation.
+          </p>
           <a
             href={PHONE_HREF}
             className="mt-10 inline-flex w-fit items-center gap-3 bg-ivory px-6 py-4 font-display text-2xl font-bold text-graphite transition-colors hover:bg-accent"

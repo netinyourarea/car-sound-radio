@@ -100,7 +100,12 @@ function ServicesPage() {
 
       <section className="border-t border-foreground/15 bg-card">
         <div className="mx-auto flex max-w-[1440px] flex-col items-start justify-between gap-8 px-5 py-16 md:flex-row md:items-end md:px-10">
-          <h2 className="text-5xl sm:text-6xl lg:text-8xl">Not sure which<br />one you need?</h2>
+          <div>
+            <h2 className="text-5xl sm:text-6xl lg:text-8xl">Not sure which<br />one you need?</h2>
+            <p className="mt-6 max-w-md text-sm leading-relaxed text-foreground/70">
+              Call for a quick consultation. Car Sound Radio is an independent service and is not affiliated with any satellite radio provider or manufacturer.
+            </p>
+          </div>
           <a href={PHONE_HREF} className="inline-flex items-center gap-3 bg-primary px-6 py-4 font-display text-2xl font-bold text-primary-foreground hover:bg-graphite">
             <Phone className="h-5 w-5" aria-hidden /> {PHONE_DISPLAY}
           </a>
