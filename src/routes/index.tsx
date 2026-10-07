@@ -8,6 +8,7 @@ import upclose from "@/assets/upclose-grille.jpg";
 import coupe from "@/assets/vehicle-coupe.jpg";
 import ctaRoad from "@/assets/cta-road.jpg";
 import { Reveal } from "@/components/site/Reveal";
+import { CallDesk, HelpTopics, SavingsIdeas } from "@/components/site/HomeSections";
 import { PHONE_DISPLAY, PHONE_HREF, services } from "@/lib/site";
 
 export const Route = createFileRoute("/")({
@@ -28,10 +29,13 @@ function Home() {
       <Hero />
       <InsideTheSound />
       <ListeningExperience />
+      <HelpTopics />
       <RadioToRoad />
       <AudioUpClose />
       <BuiltAroundVehicle />
+      <SavingsIdeas />
       <Process />
+      <CallDesk />
       <FinalCta />
     </>
   );

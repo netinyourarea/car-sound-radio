@@ -16,6 +16,11 @@ export const Route = createFileRoute("/faq")({
 });
 
 const faqs = [
+  ["Which number should I call, and who answers?", `Call ${PHONE_DISPLAY}. You'll reach Car Sound Radio, an independent information and consultation line. We're a guide to satellite radio, not the provider's own customer service desk.`],
+  ["What should I have ready before I call about activation?", "Your vehicle's make, model and year, plus the radio ID if you can find it. With those to hand we can explain the activation steps and what to expect. Timing and offers differ from one provider to the next."],
+  ["Who can help if my satellite signal is poor?", "We can talk through common reception and antenna checks for cars, and for home or boat setups too. If the fault turns out to be on the provider's side, we'll tell you what to ask them."],
+  ["Is this website owned by a satellite radio company?", "No. Car Sound Radio is independent. We aren't owned, run or endorsed by any satellite radio provider or hardware maker, and brand names mentioned belong to their owners."],
+  ["Can you tell me about current deals and discounts?", "We can explain the kinds of promotions that tend to exist and what to ask your provider. We can't promise any price or discount: rates change, conditions apply, and plans are usually bought separately from the receiver."],
   ["Is Car Sound Radio a satellite radio provider?", "No. We're an independent consultation and assistance service. We're not affiliated with any satellite radio provider or equipment manufacturer, and we can't change or cancel your subscription. We can help you understand your options and know what to ask."],
   ["Can you help me set up satellite radio in my vehicle?", "Yes. We can talk you through compatibility, activation steps, presets and everyday controls for your vehicle."],
   ["How do I know if my car's radio supports satellite?", "It depends on the make, model and year, and on whether the radio is factory-fitted or aftermarket. Tell us about your vehicle and we'll help you work out what you have."],
