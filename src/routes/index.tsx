@@ -15,7 +15,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Car Sound Radio — Make Every Drive Sound Different" },
-      { name: "description", content: "Satellite radio setup, car audio upgrades, speaker improvements and infotainment help. Call (855) 932-0777." },
+      { name: "description", content: "Satellite radio setup, car audio upgrades, speaker improvements and infotainment help. Call (888) 932-0777." },
       { property: "og:title", content: "Car Sound Radio — Make Every Drive Sound Different" },
       { property: "og:description", content: "Better in-car sound and satellite radio assistance for every kind of vehicle." },
     ],

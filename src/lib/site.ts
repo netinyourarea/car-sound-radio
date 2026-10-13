@@ -5,8 +5,8 @@ import infotainment from "@/assets/svc-infotainment.jpg";
 import troubleshoot from "@/assets/svc-troubleshoot.jpg";
 import personal from "@/assets/svc-personal.jpg";
 
-export const PHONE_DISPLAY = "(855) 932-0777";
-export const PHONE_HREF = "tel:+18559320777";
+export const PHONE_DISPLAY = "(888) 932-0777";
+export const PHONE_HREF = "tel:+18889320777";
 export const BRAND = "Car Sound Radio";
 
 export const services = [

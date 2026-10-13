@@ -8,9 +8,9 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact — Car Sound Radio" },
-      { name: "description", content: "Call (855) 932-0777 or send a message about your vehicle's audio or satellite radio." },
+      { name: "description", content: "Call (888) 932-0777 or send a message about your vehicle's audio or satellite radio." },
       { property: "og:title", content: "Contact Car Sound Radio" },
-      { property: "og:description", content: "Tell us about your vehicle and audio setup. Call (855) 932-0777." },
+      { property: "og:description", content: "Tell us about your vehicle and audio setup. Call (888) 932-0777." },
     ],
   }),
   component: ContactPage,
